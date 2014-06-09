@@ -1,0 +1,43 @@
+[{
+	"code" : "':)",
+	"position" : {
+		"x" : 0,
+		"y" : 0
+	}
+},{
+	"code" : "|B",
+	"position" : {
+		"x" : 1,
+		"y" : 0
+	}
+},{
+	"code" : "(z)",
+	"position" : {
+		"x" : 2,
+		"y" : 0
+	}
+},{
+	"code" : "(a)",
+	"position" : {
+		"x" : 3,
+		"y" : 0
+	}
+},{
+	"code" : ":$",
+	"position" : {
+		"x" : 4,
+		"y" : 0
+	}
+},{
+	"code" : "(g)",
+	"position" : {
+		"x" : 5,
+		"y" : 0
+	}
+},{
+	"code" : "8$",
+	"position" : {
+		"x" : 6,
+		"y" : 0
+	}
+}]

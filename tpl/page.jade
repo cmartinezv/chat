@@ -1,0 +1,40 @@
+doctype
+html
+	head
+		link(href='js/libs/bootstrap/dist/css/bootstrap.min.css',rel='stylesheet')
+		link(href='css/main.css',rel='stylesheet')
+		script(src='js/libs/requirejs/require.js',data-main='js/main')
+	body
+		header#header.navbar.navbar-default.navbar-fixed-top.navbar-inverse.container
+			.navbar-inner
+				h3
+					|Welcome to the Chat
+
+		.container#content-wrapper
+			.row			
+				#content.col-xs-12
+		
+		footer#footer.navbar.navbar-default.navbar-fixed-bottom.navbar-inverse.container
+				.navbar-inner
+					form.form-horizontal
+						.form-group
+							label.col-xs-3.control-label
+								|Name:
+							.col-xs-6
+								input#name.form-control
+							.col-xs-3
+								select.form-control#sel-emoticonos
+									option(value='')
+										| Select an emoticon
+									for emotico in emoticones
+										option(value='#{emotico.code}', data-image='#{emotico.image}')
+											| #{emotico.code}
+										
+						.form-group.controls
+							label.col-xs-3.control-label
+								|Message:
+							.col-xs-9
+								.input-group
+									input#field.form-control
+									span.input-group-btn
+										input#send(type='button', value='send').btn.btn-primary
